@@ -1,0 +1,16 @@
+<table class="table">
+  <thead class="black white-text">
+  <tr>
+    <th scope="col">City</th>
+    <th scope="col">Termperature</th>
+    <th scope="col">Version</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let weather of (weather$ | async)">
+    <th scope="row">{{weather.city}}</th>
+    <th scope="col">{{weather.temperature}}</th>
+    <th scope="col">{{weather.version}}</th>
+  </tr>
+  </tbody>
+</table>
