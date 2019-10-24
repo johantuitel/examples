@@ -8,6 +8,8 @@ import {appReducers} from './store/reducer/app.reducer';
 import {EffectsModule} from '@ngrx/effects';
 import {WeatherEffect} from './store/effect/weather.effect';
 import {WeatherService} from './store/service/weather.service';
+import {StoreDevtoolsModule} from '@ngrx/store-devtools';
+import {environment} from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import {WeatherService} from './store/service/weather.service';
     HttpClientModule,
     BrowserModule,
     StoreModule.forRoot(appReducers),
-    EffectsModule.forRoot([WeatherEffect])
+    EffectsModule.forRoot([WeatherEffect]),
+    !environment.production ? StoreDevtoolsModule.instrument() : []
   ],
   providers: [WeatherService],
   bootstrap: [AppComponent]
