@@ -3,30 +3,43 @@ in this repository i have simple examples to demonstrate small functionalities. 
 where i make small functionalities.
 
 ### Weatherradar
--feature: websocket
-in this project i have create an api and angular+ngrx store, with a websocket. The core about this project is to demontrate
-a websocket.
+**feature:** websocket\
+**description:** in this project i have create an api and angular+ngrx store, with a websocket. The core about this project is to demontrate
+a websocket.\
+[weatherradar](weatherradar/README.md)
 
 ### Personselector
--feature: ngrx selector
-this is a simple angular project with springboot-api. The purpose of the project is to demonstrate selectors.
- 
+**feature:** ngrx selector\
+**description:** this is a simple angular project with springboot-api. The purpose of the project is to demonstrate selectors.\
+[personselector](personselector/README.md)
+
 ### Personrouter
--feature: ngrx router
-we will continue our person project and add routing into it so the routing is store in the NGRX-store
+**feature:** ngrx router\
+**description:** we will continue our person project and add routing into it so the routing is store in the NGRX-store\
 
 ### Personentity
--feature: ngrx entity
+**feature:** ngrx entity\
+**description:** \
+[personentity](personentity/README.md)
 
 ### Persontranslation
--feature: angular translation-service
+**feature:** angular translation-service\
+**description:**\
+[persontranslation](persontranslation/README.md)
 
-### Packagetrackandtracing
--feature: tracing of package by implementing the state-design pattern
+### Trackandtracing
+**feature:** tracing of package by implementing the state-design pattern\
+**description:**\
+[trackandtracing](trackandtracing/README.md)
 
 ### High-level-rest-client elasticsearch
--feature: different queries to execute on the elasticsearch database
+**feature:**\
+**description:**\
 
 ### Terraform angular S3
+**feature:**\
+**description:**\
 
 ### Vault
+**feature:**\
+**description:**\
