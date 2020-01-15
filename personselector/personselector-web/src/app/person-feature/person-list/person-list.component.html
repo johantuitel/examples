@@ -1,0 +1,25 @@
+<select type="select" id="selectPersons" class="form-control" (change)="selectPersons($event)" name="entity" required>
+  <option value="all">All Persons</option>
+  <option value="female">Female</option>
+  <option value="male">Male</option>
+</select>
+<table class="table">
+  <thead class="black white-text">
+  <tr>
+    <th scope="col">uuid</th>
+    <th scope="col">name</th>
+    <th scope="col">gender</th>
+    <th scope="col"></th>
+    <th scope="col"></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let person of (persons$ | async)">
+    <th scope="col">{{person.uuid}}</th>
+    <th scope="col">{{person.name}}</th>
+    <th scope="col">{{person.gender}}</th>
+    <th scope="col"> <a (click)="editPerson(person)" style="cursor: pointer; color: dodgerblue;">Edit</a></th>
+    <th scope="col"> <a (click)="deletePerson(person.uuid)" style="cursor: pointer; color: firebrick;">Delete</a></th>
+  </tr>
+  </tbody>
+</table>

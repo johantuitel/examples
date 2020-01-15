@@ -1,0 +1,16 @@
+export enum PersonActionTypes {
+  NAVIGATE_TO_PERSON = '[Person] Navigate To Person',
+  LOAD_PERSONS = '[Person] Load Persons',
+  LOAD_PERSONS_SUCCESS = '[Person] Load Persons Success',
+  LOAD_PERSONS_FAILURE = '[Person] Load Persons Failure',
+  CREATE_PERSON = '[Person] Create Person',
+  CREATE_PERSON_SUCCESS = '[Person] Create Person Success',
+  CREATE_PERSON_FAILURE = '[Person] Create Person Failure',
+  EDIT_PERSON = '[Person] Edit Person',
+  UPDATE_PERSON = '[Person] Update Person',
+  UPDATE_PERSON_SUCCESS = '[Person] Update Person Success',
+  UPDATE_PERSON_FAILURE = '[Person] Update Person Failure',
+  DELETE_PERSON = '[Person] Delete Person',
+  DELETE_PERSON_SUCCESS = '[Person] Delete Person Success',
+  DELETE_PERSON_FAILURE = '[Person] Delete Person Failure',
+}
