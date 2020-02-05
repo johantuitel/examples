@@ -27,6 +27,11 @@ a websocket.\
 **description:**\
 [persontranslation](persontranslation/README.md)
 
+### Personmaterial
+**feature:** angular material\
+**description:**\
+[personmaterial](personmaterial/README.md)
+
 ### Trackandtracing
 **feature:** tracing of package by implementing the state-design pattern\
 **description:**\
