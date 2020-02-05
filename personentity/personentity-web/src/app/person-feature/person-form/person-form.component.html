@@ -1,0 +1,20 @@
+<form #personForm="ngForm" (ngSubmit)="onSave(); personForm.reset()">
+  <div class="form-group">
+    <label for="personUuid">Uuid</label>
+    <input type="input" class="form-control" id="personUuid" [(ngModel)]="currentPerson.uuid" name="uuid" [readonly]="true">
+  </div>
+  <div class="form-group">
+    <label for="personName">Name</label>
+    <input type="input" class="form-control" id="personName" [(ngModel)]="currentPerson.name" name="name">
+  </div>
+  <div class="form-group">
+    <label for="personGender">Gender</label>
+    <select type="select" class="form-control" id="personGender" [(ngModel)]="currentPerson.gender" name="gender">
+      <option value="FEMALE">Female</option>
+      <option value="MALE">Male</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-success" type="submit" [disabled]="!personForm.valid">Save</button>&nbsp;
+  </div>
+</form>
